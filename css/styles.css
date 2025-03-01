@@ -216,6 +216,55 @@ section h2::after {
     margin-bottom: 0.25rem;
 }
 
+/* Certifications Styles */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.cert-category {
+    padding: 1.5rem;
+    background: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.cert-category h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.cert-list {
+    list-style: none;
+}
+
+.cert-list li {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    background: rgba(0, 102, 204, 0.05);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.cert-list li:hover {
+    background: rgba(0, 102, 204, 0.1);
+    transform: translateX(5px);
+}
+
+.cert-list li i {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
 /* Footer Styles */
 footer {
     text-align: center;
@@ -239,9 +288,11 @@ footer {
 @keyframes fadeIn {
     from {
         opacity: 0;
+        transform: translateY(10px);
     }
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
