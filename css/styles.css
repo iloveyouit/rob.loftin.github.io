@@ -324,6 +324,37 @@ footer {
     }
 }
 
+/* Featured Projects Styles */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-item {
+    padding: 1.25rem;
+    background: rgba(0, 102, 204, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.project-item:hover {
+    background: rgba(0, 102, 204, 0.1);
+    transform: translateY(-3px);
+}
+
+.project-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.project-item p {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
 /* Print Styles */
 @media print {
     body {
