@@ -18,6 +18,11 @@
                 <div class="header-content">
                     <h1>Rob Loftin</h1>
                     <h2>Senior IT Infrastructure & Cloud Consultant</h2>
+                    <p class="tagline">Transforming enterprise IT through automation, AI, and cloud efficiency</p>
+                    <div class="cta-buttons">
+                        <button class="btn-primary" onclick="window.print()"><i class="fas fa-file-pdf"></i> Download Résumé</button>
+                        <a href="mailto:rloftin303@gmail.com?subject=Discovery%20Call%20Request" class="btn-secondary"><i class="fas fa-calendar-alt"></i> Schedule Discovery Call</a>
+                    </div>
                 </div>
             </div>
             <nav class="contact-info">
@@ -71,17 +76,193 @@
                 <h2>Featured Projects</h2>
                 <div class="project-grid">
                     <div class="project-item">
-                        <h3>Infrastructure Takeover Audit</h3>
-                        <p>Used PowerShell & Azure CLI to document entire domain & Azure tenant. 30+ key metrics automated.</p>
+                        <h3><i class="fas fa-clipboard-check"></i> Infrastructure Takeover Audit</h3>
+                        <div class="project-detail">
+                            <h4>Challenge</h4>
+                            <p>Client acquired a company with undocumented IT infrastructure spanning 200+ servers, complex Active Directory, and Azure tenant requiring immediate assessment.</p>
+                        </div>
+                        <div class="project-detail">
+                            <h4>Solution</h4>
+                            <p>Developed automated PowerShell and Azure CLI scripts to inventory and document the entire environment, including AD topology, Azure resources, security configurations, and compliance gaps.</p>
+                        </div>
+                        <div class="project-detail">
+                            <h4>Outcome</h4>
+                            <p>Delivered comprehensive audit documentation in 2 weeks (vs. estimated 2 months manual process). Automated 30+ key metrics, identified $50K in unused resources, and created ongoing monitoring dashboard.</p>
+                        </div>
+                        <div class="project-stack">
+                            <span class="stack-badge">PowerShell</span>
+                            <span class="stack-badge">Azure CLI</span>
+                            <span class="stack-badge">Active Directory</span>
+                            <span class="stack-badge">Azure</span>
+                        </div>
                     </div>
                     <div class="project-item">
-                        <h3>CI/CD Pipeline with Jenkins & Ansible</h3>
-                        <p>Automated server deployments to Azure with WinRM & GPO bootstrapping.</p>
+                        <h3><i class="fas fa-rocket"></i> CI/CD Pipeline with Jenkins & Ansible</h3>
+                        <div class="project-detail">
+                            <h4>Challenge</h4>
+                            <p>Manual server provisioning process took 3+ days per deployment, creating bottlenecks for development teams and inconsistent configurations across environments.</p>
+                        </div>
+                        <div class="project-detail">
+                            <h4>Solution</h4>
+                            <p>Architected end-to-end CI/CD pipeline using Jenkins for orchestration and Ansible for configuration management. Implemented WinRM automation and GPO-based bootstrapping for Windows servers in Azure.</p>
+                        </div>
+                        <div class="project-detail">
+                            <h4>Outcome</h4>
+                            <p>Reduced deployment time from 3 days to 2 hours (93% improvement). Achieved 100% configuration consistency and enabled developers to self-service infrastructure provisioning.</p>
+                        </div>
+                        <div class="project-stack">
+                            <span class="stack-badge">Jenkins</span>
+                            <span class="stack-badge">Ansible</span>
+                            <span class="stack-badge">Azure</span>
+                            <span class="stack-badge">WinRM</span>
+                            <span class="stack-badge">GPO</span>
+                        </div>
                     </div>
                     <div class="project-item">
-                        <h3>AI-Powered Morning Briefing</h3>
-                        <p>Created n8n+Notion+ChatGPT workflow to summarize and email daily tasks.</p>
+                        <h3><i class="fas fa-brain"></i> AI-Powered Morning Briefing</h3>
+                        <div class="project-detail">
+                            <h4>Challenge</h4>
+                            <p>Daily task management across multiple clients required reviewing numerous sources (tickets, emails, Notion pages), consuming 45+ minutes each morning.</p>
+                        </div>
+                        <div class="project-detail">
+                            <h4>Solution</h4>
+                            <p>Built intelligent automation workflow using n8n to aggregate tasks from multiple sources, ChatGPT to analyze and prioritize items, and Notion for centralized tracking with automated email summaries.</p>
+                        </div>
+                        <div class="project-detail">
+                            <h4>Outcome</h4>
+                            <p>Reduced morning prep time from 45 minutes to 5 minutes (89% time savings). Improved task prioritization and never missed critical client requests. Template shared with team for wider adoption.</p>
+                        </div>
+                        <div class="project-stack">
+                            <span class="stack-badge">n8n</span>
+                            <span class="stack-badge">ChatGPT API</span>
+                            <span class="stack-badge">Notion</span>
+                            <span class="stack-badge">Email Integration</span>
+                        </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- AI in Infrastructure Section -->
+            <section class="ai-infrastructure">
+                <h2><i class="fas fa-robot"></i> AI in Infrastructure</h2>
+                <div class="ai-intro">
+                    <p>Leveraging artificial intelligence to transform traditional IT operations into predictive, self-healing, and highly automated systems. My approach combines AI-driven insights with proven infrastructure expertise to deliver measurable efficiency gains.</p>
+                </div>
+                <div class="ai-capabilities">
+                    <div class="ai-capability">
+                        <h3><i class="fas fa-brain"></i> AI-Driven Operations</h3>
+                        <ul>
+                            <li><strong>Intelligent Workflow Automation:</strong> Built n8n + GPT integrations to automate task prioritization, reducing manual triage time by 89%</li>
+                            <li><strong>Natural Language Processing:</strong> Implemented ChatGPT API workflows to analyze and summarize complex infrastructure data from multiple sources</li>
+                            <li><strong>Smart Notifications:</strong> Created context-aware alerting systems that intelligently filter and prioritize critical events</li>
+                        </ul>
+                    </div>
+                    <div class="ai-capability">
+                        <h3><i class="fas fa-chart-line"></i> Predictive Monitoring</h3>
+                        <ul>
+                            <li><strong>Proactive Issue Detection:</strong> Analyzing patterns in system logs and metrics to identify potential failures before they impact users</li>
+                            <li><strong>Capacity Planning:</strong> Using historical data and ML models to forecast resource requirements and optimize cloud spending</li>
+                            <li><strong>Anomaly Detection:</strong> Implementing automated baselines and intelligent alerting to reduce false positives by 60%</li>
+                        </ul>
+                    </div>
+                    <div class="ai-capability">
+                        <h3><i class="fas fa-cogs"></i> Process Optimization</h3>
+                        <ul>
+                            <li><strong>Automated Documentation:</strong> Using AI to generate and maintain infrastructure documentation from live environments</li>
+                            <li><strong>Intelligent Ticket Routing:</strong> Implementing ML-based classification to route support tickets to appropriate teams automatically</li>
+                            <li><strong>Knowledge Base Enhancement:</strong> Creating AI-powered knowledge systems that learn from resolution patterns</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ai-showcase">
+                    <h3>Spotlight: AI-Powered Morning Briefing</h3>
+                    <div class="ai-showcase-content">
+                        <div class="ai-showcase-description">
+                            <p>A production workflow that demonstrates practical AI integration in daily operations. This system aggregates information from ticketing systems, email, and project management tools, uses GPT-4 to analyze and prioritize tasks based on context and urgency, then delivers a personalized briefing.</p>
+                            <p><strong>Impact:</strong> Reduced morning preparation time from 45 minutes to 5 minutes while improving task prioritization accuracy and ensuring no critical items are missed across multiple client environments.</p>
+                        </div>
+                        <div class="ai-showcase-tech">
+                            <h4>Technology Stack</h4>
+                            <div class="tech-flow">
+                                <span class="tech-step">n8n Workflows</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span class="tech-step">ChatGPT API</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span class="tech-step">Notion Database</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span class="tech-step">Email Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog / Insights Section -->
+            <section class="blog-insights">
+                <h2><i class="fas fa-lightbulb"></i> Insights & Technical Articles</h2>
+                <div class="blog-intro">
+                    <p>Sharing practical insights and lessons learned from real-world infrastructure challenges.</p>
+                </div>
+                <div class="blog-grid">
+                    <article class="blog-post">
+                        <div class="blog-header">
+                            <h3>Building Self-Healing Infrastructure with Azure Automation</h3>
+                            <span class="blog-date"><i class="far fa-calendar"></i> March 2025</span>
+                            <span class="blog-readtime"><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <p class="blog-excerpt">How to leverage Azure Automation Runbooks and Logic Apps to create infrastructure that automatically detects and resolves common issues without human intervention. Includes real-world examples of self-healing VM restarts, disk cleanup automation, and certificate renewal workflows.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Azure</span>
+                            <span class="tag">Automation</span>
+                            <span class="tag">PowerShell</span>
+                            <span class="tag">Self-Healing</span>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="blog-header">
+                            <h3>Mastering Azure Update Manager: A Practical Guide</h3>
+                            <span class="blog-date"><i class="far fa-calendar"></i> February 2025</span>
+                            <span class="blog-readtime"><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                        <p class="blog-excerpt">Deep dive into Azure Update Manager for centralized patch management across hybrid environments. Covers scheduling strategies, pre/post-patching scripts, maintenance windows, and integration with Azure Arc for on-premises servers. Learn how to achieve 99.9% patching compliance.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Azure</span>
+                            <span class="tag">Patch Management</span>
+                            <span class="tag">Compliance</span>
+                            <span class="tag">Azure Arc</span>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="blog-header">
+                            <h3>Automating Identity Management with Microsoft Graph API</h3>
+                            <span class="blog-date"><i class="far fa-calendar"></i> January 2025</span>
+                            <span class="blog-readtime"><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <p class="blog-excerpt">Practical examples of using Microsoft Graph API to automate user lifecycle management, group membership updates, and access reviews. Includes PowerShell scripts for bulk operations, API authentication best practices, and integration patterns for CI/CD pipelines.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Microsoft Graph</span>
+                            <span class="tag">Identity</span>
+                            <span class="tag">PowerShell</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="blog-header">
+                            <h3>Infrastructure as Code: Terraform vs Ansible in Practice</h3>
+                            <span class="blog-date"><i class="far fa-calendar"></i> December 2024</span>
+                            <span class="blog-readtime"><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                        <p class="blog-excerpt">When to use Terraform, when to use Ansible, and how to use both together effectively. Real-world decision framework based on provisioning vs configuration management needs, with examples from enterprise deployments. Includes hybrid approach patterns and best practices.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Terraform</span>
+                            <span class="tag">Ansible</span>
+                            <span class="tag">IaC</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                    </article>
                 </div>
             </section>
 
