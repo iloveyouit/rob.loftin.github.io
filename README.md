@@ -8,6 +8,7 @@ A modern, responsive resume website built with HTML5, CSS3, and JavaScript. This
 - Modern and clean UI with smooth animations
 - Print-friendly styling
 - SEO-friendly HTML structure
+- Data-driven Skills and Projects sections via JSON
 - Easy to customize and maintain
 
 ## Setup
@@ -37,13 +38,21 @@ The color scheme can be customized by modifying the CSS variables in the `:root`
 ```
 
 ### Content
-Update the content in `index.html` with your personal information:
+Update the core profile content in `index.html`:
 - Name and title
 - Contact information
 - Professional summary
 - Work experience
-- Skills
 - Education
+
+Update dynamic sections through JSON data files:
+- `data/skills.json` → Skills categories and items
+- `data/projects.json` → Featured projects (challenge/solution/outcome/stack/caseStudyUrl)
+
+Additional pages:
+- `projects.html` → Filterable project index
+- `skills.html` → Searchable skills matrix
+- `case-study/*.html` → Expandable project detail pages
 
 ## License
 

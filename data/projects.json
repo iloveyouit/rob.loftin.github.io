@@ -1,0 +1,29 @@
+[
+  {
+    "icon": "fas fa-clipboard-check",
+    "title": "Infrastructure Takeover Audit",
+    "challenge": "Client acquired a company with undocumented IT infrastructure spanning 200+ servers, complex Active Directory, and an Azure tenant requiring immediate assessment.",
+    "solution": "Built automated PowerShell and Azure CLI inventory workflows to document topology, security posture, and compliance gaps end-to-end.",
+    "outcome": "Delivered full audit in 2 weeks (vs. ~2 months manually), identified $50K in unused resources, and established ongoing monitoring dashboards.",
+    "stack": ["PowerShell", "Azure CLI", "Active Directory", "Azure"],
+    "caseStudyUrl": "case-study/infrastructure-takeover-audit.html"
+  },
+  {
+    "icon": "fas fa-rocket",
+    "title": "CI/CD Pipeline with Jenkins & Ansible",
+    "challenge": "Manual provisioning required 3+ days per deployment and produced inconsistent environment configurations.",
+    "solution": "Architected Jenkins orchestration with Ansible configuration management and WinRM/GPO bootstrapping for Azure-hosted Windows servers.",
+    "outcome": "Cut deployment time from 3 days to 2 hours (93% faster), with consistent builds and self-service provisioning for engineering teams.",
+    "stack": ["Jenkins", "Ansible", "Azure", "WinRM", "GPO"],
+    "caseStudyUrl": "case-study/cicd-jenkins-ansible.html"
+  },
+  {
+    "icon": "fas fa-brain",
+    "title": "AI-Powered Morning Briefing",
+    "challenge": "Daily triage across email, tickets, and project tools consumed 45+ minutes each morning.",
+    "solution": "Implemented n8n automation + GPT analysis to aggregate, prioritize, and summarize critical tasks into a daily operations brief.",
+    "outcome": "Reduced prep from 45 minutes to 5 minutes (89% savings), improved prioritization quality, and scaled a reusable template across the team.",
+    "stack": ["n8n", "OpenAI API", "Notion", "Email Integration"],
+    "caseStudyUrl": "case-study/ai-morning-briefing.html"
+  }
+]

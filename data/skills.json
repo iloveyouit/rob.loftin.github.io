@@ -1,0 +1,26 @@
+[
+  {
+    "category": "AI & Agent Architecture",
+    "items": [
+      "Autonomous AI agents and workflow orchestration",
+      "Prompt engineering and tool-calling pipelines",
+      "n8n, LangChain/LangGraph, semantic memory systems"
+    ]
+  },
+  {
+    "category": "Cloud & Platform",
+    "items": [
+      "Azure, AWS, VMware ESXi, hybrid infrastructure",
+      "Infrastructure as Code (Terraform, Ansible)",
+      "PowerShell, Python, Bash automation"
+    ]
+  },
+  {
+    "category": "Security, Identity & Operations",
+    "items": [
+      "Entra ID / Active Directory, SCCM, Intune",
+      "Cisco networking, firewalls, VPN, compliance operations",
+      "CI/CD with GitHub Actions, Jenkins, Azure DevOps"
+    ]
+  }
+]
