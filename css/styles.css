@@ -957,6 +957,12 @@ section h2::after {
 }
 
 /* Services section */
+.services-intro {
+    margin-bottom: 1rem;
+    color: #555;
+    max-width: 900px;
+}
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

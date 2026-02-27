@@ -25,5 +25,32 @@
     "outcome": "Reduced prep from 45 minutes to 5 minutes (89% savings), improved prioritization quality, and scaled a reusable template across the team.",
     "stack": ["n8n", "OpenAI API", "Notion", "Email Integration"],
     "caseStudyUrl": "case-study/ai-morning-briefing.html"
+  },
+  {
+    "icon": "fas fa-shield-alt",
+    "title": "Identity Security Hardening Program",
+    "challenge": "Hybrid identity environment had privilege sprawl, inconsistent MFA enforcement, and audit findings tied to access governance gaps.",
+    "solution": "Implemented Entra ID conditional access baselines, privileged role controls, access review automations, and standardized onboarding/offboarding policy enforcement.",
+    "outcome": "Improved identity compliance by 40%, reduced high-risk access exposure, and established a repeatable control framework for quarterly audits.",
+    "stack": ["Entra ID", "Conditional Access", "PowerShell", "Governance"],
+    "caseStudyUrl": "case-study/identity-security-hardening.html"
+  },
+  {
+    "icon": "fas fa-dollar-sign",
+    "title": "Azure Cost Optimization & Rightsizing",
+    "challenge": "Rapid cloud growth created unclear spend ownership, oversized compute footprints, and no operational cost guardrails.",
+    "solution": "Delivered resource tagging governance, rightsizing recommendations, reserved-capacity strategy, and automated weekly cost anomaly reporting.",
+    "outcome": "Reduced monthly cloud spend by ~22% within one quarter while improving visibility and accountability across engineering teams.",
+    "stack": ["Azure", "FinOps", "Automation", "Cost Governance"],
+    "caseStudyUrl": "case-study/azure-cost-optimization.html"
+  },
+  {
+    "icon": "fas fa-tools",
+    "title": "Incident-to-Runbook Automation",
+    "challenge": "Recurring incidents were resolved manually with inconsistent response quality and weak knowledge transfer between teams.",
+    "solution": "Built incident classification and runbook generation workflow integrating ticketing data, resolution summaries, and reusable remediation scripts.",
+    "outcome": "Cut mean time to resolution by 30%, improved first-response consistency, and created an expanding operational knowledge base.",
+    "stack": ["n8n", "PowerShell", "Knowledge Base", "ITSM"],
+    "caseStudyUrl": "case-study/incident-runbook-automation.html"
   }
 ]
