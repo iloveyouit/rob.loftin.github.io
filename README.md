@@ -54,6 +54,11 @@ Additional pages:
 - `skills.html` → Searchable skills matrix
 - `case-study/*.html` → Expandable project detail pages
 
+Content operations docs:
+- `project-template.md` → Standard structure for project case studies
+- `project-intake.md` → Pre-publish intake requirements
+- `publish-checklist.md` → Final QA + publish workflow
+
 ## License
 
 This project is open source and available under the MIT License.
