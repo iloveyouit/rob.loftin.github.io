@@ -1,26 +1,50 @@
 [
   {
-    "category": "AI & Agent Architecture",
+    "category": "Azure & Cloud Operations",
     "items": [
-      "Autonomous AI agents and workflow orchestration",
-      "Prompt engineering and tool-calling pipelines",
-      "n8n, LangChain/LangGraph, semantic memory systems"
+      "Azure virtual machines, disks, snapshots, policy, cost and update operations",
+      "Entra ID, Conditional Access and hybrid identity troubleshooting",
+      "AWS and hybrid cloud operations across VMware and Hyper-V"
     ]
   },
   {
-    "category": "Cloud & Platform",
+    "category": "Automation & Delivery",
     "items": [
-      "Azure, AWS, VMware ESXi, hybrid infrastructure",
-      "Infrastructure as Code (Terraform, Ansible)",
-      "PowerShell, Python, Bash automation"
+      "PowerShell with WhatIf, validation, structured logs and evidence exports",
+      "Python, Bash, Ansible, Terraform, GitHub Actions and Jenkins",
+      "Runbooks, change gates, rollback planning and post-change validation"
     ]
   },
   {
-    "category": "Security, Identity & Operations",
+    "category": "Windows Infrastructure",
     "items": [
-      "Entra ID / Active Directory, SCCM, Intune",
-      "Cisco networking, firewalls, VPN, compliance operations",
-      "CI/CD with GitHub Actions, Jenkins, Azure DevOps"
+      "Windows Server, Active Directory, DNS, Group Policy and WinRM",
+      "WSUS, SCCM, Intune, patch compliance and event investigation",
+      "Citrix, IIS, monitoring, virtualization and data-centre operations"
+    ]
+  },
+  {
+    "category": "AI & Knowledge Systems",
+    "items": [
+      "AI-assisted operations, classification, summarization and decision support",
+      "n8n workflows, tool-calling agents and knowledge pipelines",
+      "Provenance, redaction, verification and human approval boundaries"
+    ]
+  },
+  {
+    "category": "Full-Stack Prototyping",
+    "items": [
+      "React, TypeScript, Node.js, Flask and REST APIs",
+      "PostgreSQL, Supabase, SQLite and role-aware data access",
+      "Docker, Vercel, VPS deployment and CI validation"
+    ]
+  },
+  {
+    "category": "Consulting & Operations",
+    "items": [
+      "Incident response, fault isolation and evidence-based recommendations",
+      "Technical documentation, diagrams, handoffs and knowledge transfer",
+      "Cross-team delivery, risk communication and change control"
     ]
   }
 ]

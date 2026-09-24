@@ -1,45 +1,31 @@
 async function loadSkills() {
-  const res = await fetch('data/skills.json');
-  if (!res.ok) throw new Error('Failed to load skills data');
-  return res.json();
+  const response = await fetch('data/skills.json');
+  if (!response.ok) throw new Error('Failed to load skills data');
+  return response.json();
 }
 
 function renderSkills(skills, query = '') {
-  const grid = document.getElementById('skills-grid-page');
-  if (!grid) return;
-
   const q = query.trim().toLowerCase();
-  const filtered = skills
-    .map(cat => ({
-      ...cat,
-      items: cat.items.filter(item =>
-        !q || cat.category.toLowerCase().includes(q) || item.toLowerCase().includes(q)
-      )
-    }))
-    .filter(cat => cat.items.length > 0 || !q);
+  const filtered = skills.map(group => ({
+    ...group,
+    items: group.items.filter(item => !q || group.category.toLowerCase().includes(q) || item.toLowerCase().includes(q))
+  })).filter(group => group.items.length);
 
-  grid.innerHTML = filtered.map(cat => `
-    <section class="skill-category">
-      <h3>${cat.category}</h3>
-      <ul class="skill-list">
-        ${cat.items.map(item => `<li>${item}</li>`).join('')}
-      </ul>
-    </section>
-  `).join('');
+  document.getElementById('skills-grid-page').innerHTML = filtered.length
+    ? filtered.map(group => `<article class="skill-category"><h3>${group.category}</h3><ul class="skill-list">${group.items.map(item => `<li>${item}</li>`).join('')}</ul></article>`).join('')
+    : '<p>No matching skills found.</p>';
 }
 
-async function initSkillsPage() {
+async function initSkills() {
+  const grid = document.getElementById('skills-grid-page');
   try {
     const skills = await loadSkills();
     renderSkills(skills);
-
-    const input = document.getElementById('skills-search');
-    if (input) {
-      input.addEventListener('input', () => renderSkills(skills, input.value));
-    }
-  } catch (err) {
-    console.error(err);
+    document.getElementById('skills-search').addEventListener('input', event => renderSkills(skills, event.target.value));
+  } catch (error) {
+    console.error(error);
+    grid.innerHTML = '<p class="error-message">Skills are temporarily unavailable.</p>';
   }
 }
 
-document.addEventListener('DOMContentLoaded', initSkillsPage);
+document.addEventListener('DOMContentLoaded', initSkills);

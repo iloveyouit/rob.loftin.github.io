@@ -1,65 +1,48 @@
 async function loadProjects() {
-  const res = await fetch('data/projects.json');
-  if (!res.ok) throw new Error('Failed to load projects data');
-  return res.json();
+  const response = await fetch('data/projects.json');
+  if (!response.ok) throw new Error('Failed to load projects data');
+  return response.json();
 }
 
 function projectCard(project) {
-  const stack = project.stack.map(s => `<span class="stack-badge">${s}</span>`).join('');
   return `
     <article class="project-item">
-      <h3><i class="${project.icon}"></i> ${project.title}</h3>
-      <div class="project-detail"><h4>Challenge</h4><p>${project.challenge}</p></div>
-      <div class="project-detail"><h4>Solution</h4><p>${project.solution}</p></div>
-      <div class="project-detail"><h4>Outcome</h4><p>${project.outcome}</p></div>
-      <div class="project-stack">${stack}</div>
-      ${project.caseStudyUrl ? `<a class="case-link" href="${project.caseStudyUrl}">View Case Study</a>` : ''}
-    </article>
-  `;
+      <div class="project-kicker"><span>${project.category}</span><span>${project.year}</span></div>
+      <h3>${project.title}</h3>
+      <p>${project.summary}</p>
+      <div class="project-detail"><h4>Verified scope</h4><p>${project.evidence}</p></div>
+      <div class="project-stack">${project.stack.map(item => `<span class="stack-badge">${item}</span>`).join('')}</div>
+      <a class="case-link" href="${project.caseStudyUrl}">Read the project note <span aria-hidden="true">&nbsp;→</span></a>
+    </article>`;
 }
 
-function renderFilterButtons(projects) {
-  const bar = document.getElementById('project-filters');
-  if (!bar) return;
-
-  const tags = [...new Set(projects.flatMap(p => p.stack))].sort();
-  const buttons = ['All', ...tags].map(tag =>
-    `<button class="filter-btn${tag === 'All' ? ' active' : ''}" data-filter="${tag}">${tag}</button>`
-  ).join('');
-
-  bar.innerHTML = buttons;
+function renderProjects(projects, filter = 'All') {
+  const visible = filter === 'All' ? projects : projects.filter(project => project.category === filter || project.stack.includes(filter));
+  document.getElementById('project-grid').innerHTML = visible.map(projectCard).join('');
 }
 
-function bindFilters(projects) {
-  const bar = document.getElementById('project-filters');
+async function initProjects() {
   const grid = document.getElementById('project-grid');
-  if (!bar || !grid) return;
-
-  bar.addEventListener('click', (e) => {
-    const btn = e.target.closest('button[data-filter]');
-    if (!btn) return;
-
-    bar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
-    const filter = btn.dataset.filter;
-    const visible = filter === 'All' ? projects : projects.filter(p => p.stack.includes(filter));
-    grid.innerHTML = visible.map(projectCard).join('');
-  });
-}
-
-async function initProjectsPage() {
+  const bar = document.getElementById('project-filters');
   try {
     const projects = await loadProjects();
-    const grid = document.getElementById('project-grid');
-    if (!grid) return;
-
-    renderFilterButtons(projects);
-    grid.innerHTML = projects.map(projectCard).join('');
-    bindFilters(projects);
-  } catch (err) {
-    console.error(err);
+    const filters = ['All', ...new Set(projects.map(project => project.category))];
+    bar.innerHTML = filters.map((filter, index) => `<button class="filter-btn${index === 0 ? ' active' : ''}" type="button" data-filter="${filter}" aria-pressed="${index === 0}">${filter}</button>`).join('');
+    renderProjects(projects);
+    bar.addEventListener('click', event => {
+      const button = event.target.closest('button[data-filter]');
+      if (!button) return;
+      bar.querySelectorAll('button').forEach(item => {
+        const active = item === button;
+        item.classList.toggle('active', active);
+        item.setAttribute('aria-pressed', String(active));
+      });
+      renderProjects(projects, button.dataset.filter);
+    });
+  } catch (error) {
+    console.error(error);
+    grid.innerHTML = '<p class="error-message">Project details are temporarily unavailable.</p>';
   }
 }
 
-document.addEventListener('DOMContentLoaded', initProjectsPage);
+document.addEventListener('DOMContentLoaded', initProjects);

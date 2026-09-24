@@ -1,34 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Skills | Rob Loftin</title>
-  <meta name="description" content="Skills matrix for Rob Loftin across AI architecture, cloud platforms, and enterprise operations." />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <meta name="description" content="Rob Loftin's technical capabilities across Azure, PowerShell, Windows infrastructure, AI knowledge systems, full-stack prototyping, and consulting operations.">
+  <link rel="canonical" href="https://iloveyouit.github.io/rob.loftin.github.io/skills.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header subpage-header">
-      <div class="header-content">
-        <h1>Skills Matrix</h1>
-        <p class="tagline">Execution capabilities organized for fast client and recruiter review</p>
-      </div>
-      <nav class="page-nav">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-      </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html"><span>RL</span> Rob Loftin</a>
+    <nav class="primary-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="projects.html">Projects</a></nav>
+  </header>
+  <main id="main" class="page-shell">
+    <header class="subpage-header">
+      <p class="eyebrow">Skills matrix</p>
+      <h1>Broad enough to connect the system.</h1>
+      <p>Deep infrastructure experience combined with automation, product prototyping, governance, and practical AI-assisted delivery.</p>
     </header>
-
-    <main>
-      <section>
-        <h2>Core Skills</h2>
-        <input id="skills-search" class="search-input" type="search" placeholder="Filter skills (e.g., Azure, Identity, AI)" />
-        <div id="skills-grid-page" class="skills-grid"></div>
-      </section>
-    </main>
-  </div>
+    <section class="section" aria-labelledby="skills-title">
+      <h2 id="skills-title">Capabilities</h2>
+      <label for="skills-search" class="eyebrow">Filter the matrix</label>
+      <input id="skills-search" class="search-input" type="search" placeholder="Try Azure, PowerShell, identity, AI, Docker…">
+      <div id="skills-grid-page" class="skills-grid" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer class="site-footer"><p>© 2026 Rob Loftin</p><p>Infrastructure · Automation · Governed AI</p></footer>
   <script src="js/skills.js"></script>
 </body>
 </html>

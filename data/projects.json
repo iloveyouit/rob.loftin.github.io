@@ -1,56 +1,62 @@
 [
   {
-    "icon": "fas fa-clipboard-check",
-    "title": "Infrastructure Takeover Audit",
-    "challenge": "Client acquired a company with undocumented IT infrastructure spanning 200+ servers, complex Active Directory, and an Azure tenant requiring immediate assessment.",
-    "solution": "Built automated PowerShell and Azure CLI inventory workflows to document topology, security posture, and compliance gaps end-to-end.",
-    "outcome": "Delivered full audit in 2 weeks (vs. ~2 months manually), identified $50K in unused resources, and established ongoing monitoring dashboards.",
-    "stack": ["PowerShell", "Azure CLI", "Active Directory", "Azure"],
-    "caseStudyUrl": "case-study/infrastructure-takeover-audit.html"
+    "year": "2026",
+    "category": "Azure operations",
+    "title": "Azure VM Manager",
+    "summary": "A guarded operations platform for Azure virtual machines, designed around visibility, simulation, approvals, audit evidence, and safe execution.",
+    "evidence": "Sealed version 1 after 71 roadmap items, then added backend-enforced approval gates, controlled bulk power actions, an executable patch runbook, and Azure Policy compliance integration. Verification included 71 backend and 59 frontend tests.",
+    "stack": ["Azure", "Python", "Flask", "React", "TypeScript", "Entra ID"],
+    "caseStudyUrl": "case-study/azure-vm-manager.html",
+    "featured": true
   },
   {
-    "icon": "fas fa-rocket",
-    "title": "CI/CD Pipeline with Jenkins & Ansible",
-    "challenge": "Manual provisioning required 3+ days per deployment and produced inconsistent environment configurations.",
-    "solution": "Architected Jenkins orchestration with Ansible configuration management and WinRM/GPO bootstrapping for Azure-hosted Windows servers.",
-    "outcome": "Cut deployment time from 3 days to 2 hours (93% faster), with consistent builds and self-service provisioning for engineering teams.",
-    "stack": ["Jenkins", "Ansible", "Azure", "WinRM", "GPO"],
-    "caseStudyUrl": "case-study/cicd-jenkins-ansible.html"
+    "year": "2026",
+    "category": "PowerShell automation",
+    "title": "Patch Compliance & Recovery Automation",
+    "summary": "Reusable Windows Server patch assessment and pre-change recovery workflows for managed environments.",
+    "evidence": "Validated Server 2016–2025 security baselines, separated unreachable from non-compliant systems, and produced console, CSV, and HTML evidence. A companion Azure workflow prepared snapshots for 12 VMs with WhatIf, duplicate detection, and readiness gates.",
+    "stack": ["PowerShell", "Windows Server", "WSUS", "Azure", "WinRM"],
+    "caseStudyUrl": "case-study/patch-compliance-recovery.html",
+    "featured": true
   },
   {
-    "icon": "fas fa-brain",
-    "title": "AI-Powered Morning Briefing",
-    "challenge": "Daily triage across email, tickets, and project tools consumed 45+ minutes each morning.",
-    "solution": "Implemented n8n automation + GPT analysis to aggregate, prioritize, and summarize critical tasks into a daily operations brief.",
-    "outcome": "Reduced prep from 45 minutes to 5 minutes (89% savings), improved prioritization quality, and scaled a reusable template across the team.",
-    "stack": ["n8n", "OpenAI API", "Notion", "Email Integration"],
-    "caseStudyUrl": "case-study/ai-morning-briefing.html"
+    "year": "2026",
+    "category": "Knowledge systems",
+    "title": "KnowledgeForge",
+    "summary": "A governed pipeline for converting years of technical conversations into durable, publishable knowledge without losing provenance or human control.",
+    "evidence": "Established immutable source retention, checksum-bound intake, privacy review, verification gates, approval-controlled publication, and a bounded real-export pilot. Milestone 1 and 2 exit assessments passed before advancing classification work.",
+    "stack": ["Python", "PowerShell", "Markdown", "GitHub Actions", "Governance"],
+    "caseStudyUrl": "case-study/knowledgeforge.html",
+    "featured": true
   },
   {
-    "icon": "fas fa-shield-alt",
-    "title": "Identity Security Hardening Program",
-    "challenge": "Hybrid identity environment had privilege sprawl, inconsistent MFA enforcement, and audit findings tied to access governance gaps.",
-    "solution": "Implemented Entra ID conditional access baselines, privileged role controls, access review automations, and standardized onboarding/offboarding policy enforcement.",
-    "outcome": "Improved identity compliance by 40%, reduced high-risk access exposure, and established a repeatable control framework for quarterly audits.",
-    "stack": ["Entra ID", "Conditional Access", "PowerShell", "Governance"],
-    "caseStudyUrl": "case-study/identity-security-hardening.html"
+    "year": "2026",
+    "category": "Diagnostics",
+    "title": "Infrastructure Evidence Toolkit",
+    "summary": "A collection of investigation and inventory tools built for repeatable diagnosis across enterprise Windows environments.",
+    "evidence": "Created reusable workflows for WinRM discovery, WSUS exposure, archived security events, Active Directory, hypervisors, and detailed reboot-event capture—each designed to distinguish verified findings from assumptions.",
+    "stack": ["PowerShell", "Active Directory", "WinRM", "Hyper-V", "VMware"],
+    "caseStudyUrl": "case-study/infrastructure-evidence-toolkit.html",
+    "featured": true
   },
   {
-    "icon": "fas fa-dollar-sign",
-    "title": "Azure Cost Optimization & Rightsizing",
-    "challenge": "Rapid cloud growth created unclear spend ownership, oversized compute footprints, and no operational cost guardrails.",
-    "solution": "Delivered resource tagging governance, rightsizing recommendations, reserved-capacity strategy, and automated weekly cost anomaly reporting.",
-    "outcome": "Reduced monthly cloud spend by ~22% within one quarter while improving visibility and accountability across engineering teams.",
-    "stack": ["Azure", "FinOps", "Automation", "Cost Governance"],
-    "caseStudyUrl": "case-study/azure-cost-optimization.html"
+    "year": "2026",
+    "category": "Platform architecture",
+    "title": "CharterOS V2",
+    "summary": "A clean-room architecture and controlled delivery plan for a second-generation charter operations platform.",
+    "evidence": "Completed the M0 architecture and evidence boundary, documented a Proxmox-backed Compose staging model, threat model, domain contracts, synthetic golden journeys, and a gated first slice. Live data, payment, messaging, and provider integrations remain explicitly blocked.",
+    "stack": ["TypeScript", "PostgreSQL", "Docker", "Proxmox", "Architecture"],
+    "caseStudyUrl": "case-study/charteros-v2.html",
+    "featured": false
   },
   {
-    "icon": "fas fa-tools",
-    "title": "Incident-to-Runbook Automation",
-    "challenge": "Recurring incidents were resolved manually with inconsistent response quality and weak knowledge transfer between teams.",
-    "solution": "Built incident classification and runbook generation workflow integrating ticketing data, resolution summaries, and reusable remediation scripts.",
-    "outcome": "Cut mean time to resolution by 30%, improved first-response consistency, and created an expanding operational knowledge base.",
-    "stack": ["n8n", "PowerShell", "Knowledge Base", "ITSM"],
-    "caseStudyUrl": "case-study/incident-runbook-automation.html"
+    "year": "2026",
+    "category": "Product engineering",
+    "title": "Front Range Insurance Lab",
+    "summary": "A bilingual reference experience and reusable deployment starter for independent insurance agencies.",
+    "evidence": "Built adaptive intake, English and Spanish journeys, secure handoff boundaries, portable standalone Node output, Docker/VPS packaging, and AMD64 CI coverage. The fictional reference agency remains private and clearly labeled as concept mode.",
+    "stack": ["TypeScript", "React", "Node.js", "Docker", "CI/CD"],
+    "caseStudyUrl": "case-study/front-range-insurance-lab.html",
+    "featured": false
   }
 ]

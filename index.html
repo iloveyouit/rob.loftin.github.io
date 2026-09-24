@@ -1,545 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Primary Meta Tags -->
-    <title>Rob Loftin - AI-First Technology Executive | Infrastructure, Automation, Agentic Systems</title>
-    <meta name="title" content="Rob Loftin - AI-First Technology Executive | Infrastructure, Automation, Agentic Systems">
-    <meta name="description" content="CEO & Chief AI Architect with 20+ years in enterprise infrastructure. Builds AI-first operations, autonomous workflows, and cloud automation systems that accelerate delivery, reduce risk, and improve cost efficiency.">
-    <meta name="keywords" content="IT Infrastructure Consultant, Cloud Consultant, Azure Expert, AWS Solutions, DevOps Automation, Infrastructure as Code, Terraform, Ansible, PowerShell, VMware, AI Automation, IT Operations, Denver Colorado, Toronto Canada">
-    <meta name="author" content="Rob Loftin">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://iloveyouit.github.io/rob.loftin.github.io/">
-    <meta property="og:title" content="Rob Loftin - AI-First Technology Executive">
-    <meta property="og:description" content="CEO & Chief AI Architect building AI-driven operations, cloud automation, and autonomous systems for measurable business outcomes.">
-    <meta property="og:image" content="https://iloveyouit.github.io/rob.loftin.github.io/images/image.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://iloveyouit.github.io/rob.loftin.github.io/">
-    <meta property="twitter:title" content="Rob Loftin - AI-First Technology Executive">
-    <meta property="twitter:description" content="CEO & Chief AI Architect building AI-driven operations, cloud automation, and autonomous systems for measurable business outcomes.">
-    <meta property="twitter:image" content="https://iloveyouit.github.io/rob.loftin.github.io/images/image.png">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://iloveyouit.github.io/rob.loftin.github.io/">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Rob Loftin",
-      "jobTitle": "CEO & Chief AI Architect",
-      "url": "https://iloveyouit.github.io/rob.loftin.github.io/",
-      "sameAs": [
-        "https://linkedin.com/in/rob-loftin",
-        "https://github.com/iloveyouit"
-      ],
-      "knowsAbout": [
-        "AI Automation",
-        "Cloud Infrastructure",
-        "DevOps",
-        "Azure",
-        "AWS",
-        "Infrastructure as Code"
-      ]
-    }
-    </script>
-
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rob Loftin | Infrastructure, Automation &amp; AI Systems</title>
+  <meta name="description" content="Rob Loftin is a senior infrastructure and automation consultant building safer Azure operations, PowerShell tooling, governed AI workflows, and evidence-ready runbooks.">
+  <meta name="author" content="Rob Loftin">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://iloveyouit.github.io/rob.loftin.github.io/">
+  <meta property="og:title" content="Rob Loftin | Infrastructure, Automation &amp; AI Systems">
+  <meta property="og:description" content="Evidence-first infrastructure engineering across Azure, Windows Server, automation, security, and governed AI systems.">
+  <meta property="og:image" content="https://iloveyouit.github.io/rob.loftin.github.io/images/image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rob Loftin | Infrastructure, Automation &amp; AI Systems">
+  <meta name="twitter:description" content="Evidence-first infrastructure engineering across Azure, Windows Server, automation, security, and governed AI systems.">
+  <meta name="twitter:image" content="https://iloveyouit.github.io/rob.loftin.github.io/images/image.png">
+  <link rel="canonical" href="https://iloveyouit.github.io/rob.loftin.github.io/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23081724'/%3E%3Cpath d='M18 45V18h15c8 0 13 4 13 11 0 5-3 9-8 10l9 6H36l-8-7v7H18zm10-15h5c3 0 4-1 4-3s-1-3-4-3h-5v6z' fill='%234ade80'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rob Loftin",
+    "jobTitle": "Senior Infrastructure and Automation Consultant",
+    "url": "https://iloveyouit.github.io/rob.loftin.github.io/",
+    "sameAs": ["https://linkedin.com/in/rob-loftin", "https://github.com/iloveyouit"],
+    "knowsAbout": ["Microsoft Azure", "Windows Server", "PowerShell", "Infrastructure Automation", "Entra ID", "AI-assisted Operations"]
+  }
+  </script>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="profile-container">
-                <div class="profile-image">
-                    <img src="images/image.png" alt="Rob Loftin" />
-                </div>
-                <div class="header-content">
-                    <h1>Rob Loftin</h1>
-                    <h2>CEO & Chief AI Architect | AI-First Technology Executive</h2>
-                    <p class="tagline">Building autonomous operations, resilient cloud platforms, and measurable business outcomes</p>
-                    <div class="cta-buttons">
-                        <button class="btn-primary" onclick="window.print()"><i class="fas fa-file-pdf"></i> Download Résumé</button>
-                        <a href="mailto:rloftin303@gmail.com?subject=Discovery%20Call%20Request" class="btn-secondary"><i class="fas fa-calendar-alt"></i> Schedule Discovery Call</a>
-                        <a href="https://linkedin.com/in/rob-loftin" target="_blank" rel="noopener noreferrer" class="btn-secondary" aria-label="Connect on LinkedIn (opens in new tab)"><i class="fab fa-linkedin"></i> Connect on LinkedIn</a>
-                    </div>
-                </div>
-            </div>
-            <nav class="contact-info">
-                <a href="mailto:rloftin303@gmail.com"><i class="fas fa-envelope"></i> rloftin303@gmail.com</a>
-                <a href="tel:720.292.6098"><i class="fas fa-phone"></i> (720) 292-6098</a>
-                <a href="https://linkedin.com/in/rob-loftin" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/iloveyouit" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
-                <a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a>
-                <a href="skills.html"><i class="fas fa-layer-group"></i> Skills</a>
-            </nav>
-        </header>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Rob Loftin home"><span>RL</span> Rob Loftin</a>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">All projects</a>
+    </nav>
+  </header>
 
-        <main>
-            <section class="summary">
-                <h2>Professional Summary</h2>
-                <p>AI-first technology executive with 20+ years of enterprise infrastructure leadership. I design and operate systems where cloud, automation, and AI work together to accelerate delivery, reduce operational risk, and create measurable business leverage.</p>
-                <p>My work spans Azure, AWS, VMware, identity, security, and modern DevOps practices, with a strong focus on agentic automation and autonomous operations. I lead high-performing teams and ship practical systems that move organizations from reactive IT to proactive, intelligence-driven execution.</p>
-                <p>Recent outcomes include a 93% deployment-time reduction, 40% compliance improvement, and 30% faster ticket resolution through AI-driven workflows. Mission: build infrastructure that is resilient, efficient, and increasingly self-healing.</p>
-            </section>
-
-            <!-- About Me Section -->
-            <section class="about-me">
-                <h2><i class="fas fa-user"></i> About Me</h2>
-                <div class="about-content">
-                    <div class="about-narrative">
-                        <p>My journey in IT began over 15 years ago with a simple fascination: how can technology solve complex business problems? Starting as a field technician at Dell, I quickly realized that true impact comes not from fixing individual issues, but from building systems that prevent problems before they occur.</p>
-
-                        <p>This philosophy has guided my career from data center operations to infrastructure architecture, and now to leading teams that transform how enterprises manage their IT environments. Along the way, I've worked across diverse industries—from financial services to title insurance to tech startups—each teaching me that technology is only powerful when it serves real business needs.</p>
-
-                        <p>What drives me today is the intersection of traditional infrastructure expertise and emerging AI capabilities. I've seen firsthand how intelligent automation can turn reactive IT operations into proactive, self-healing systems. When I reduced deployment times from 3 days to 2 hours, or cut ticket resolution time by 30% through AI-driven workflows, I wasn't just implementing technology—I was giving teams the freedom to focus on innovation instead of firefighting.</p>
-
-                        <p>My mission is clear: <strong>Making infrastructure self-healing, efficient, and invisible</strong>. The best infrastructure is the one you never have to think about—it just works, adapts, and optimizes itself. Whether it's through Infrastructure as Code, AI-powered monitoring, or strategic cloud architecture, I help organizations build IT systems that are not just reliable, but intelligent.</p>
-                    </div>
-                    <div class="about-highlights">
-                        <h3>What I Believe</h3>
-                        <ul class="belief-list">
-                            <li><i class="fas fa-lightbulb"></i> <strong>Automation First:</strong> Every manual process is an opportunity for improvement</li>
-                            <li><i class="fas fa-chart-line"></i> <strong>Measure Everything:</strong> You can't improve what you don't measure</li>
-                            <li><i class="fas fa-users"></i> <strong>People Over Process:</strong> Technology serves people, not the other way around</li>
-                            <li><i class="fas fa-rocket"></i> <strong>Continuous Learning:</strong> The best solution today is tomorrow's technical debt</li>
-                            <li><i class="fas fa-shield-alt"></i> <strong>Security by Design:</strong> Security isn't a feature, it's a foundation</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="skills">
-                <h2>Key Skills</h2>
-                <div class="skills-grid" id="skills-grid"></div>
-            </section>
-
-            <section class="services-offers">
-                <h2>Services & Engagement Offers</h2>
-                <p class="services-intro">Outcome-focused engagements for leaders who need speed, governance, and measurable ROI from AI and infrastructure investments.</p>
-                <div class="services-grid">
-                    <article class="service-card">
-                        <h3>AI Strategy Sprint (10 Business Days)</h3>
-                        <p>Executive alignment + practical roadmap to move from AI ambition to funded execution.</p>
-                        <ul class="service-list">
-                            <li>AI readiness, risk, and capability baseline</li>
-                            <li>Top 5 highest-ROI automation opportunities</li>
-                            <li>90-day roadmap with owners and milestones</li>
-                        </ul>
-                    </article>
-                    <article class="service-card">
-                        <h3>Cloud & Ops Modernization</h3>
-                        <p>Stabilize platform operations while increasing delivery speed and reducing cost drag.</p>
-                        <ul class="service-list">
-                            <li>IaC and deployment pipeline acceleration</li>
-                            <li>Security and compliance control uplift</li>
-                            <li>FinOps optimization and rightsizing plan</li>
-                        </ul>
-                    </article>
-                    <article class="service-card">
-                        <h3>Autonomous Operations Build</h3>
-                        <p>Design and deploy AI-assisted workflows that reduce repetitive work and improve response quality.</p>
-                        <ul class="service-list">
-                            <li>Agent/workflow architecture blueprint</li>
-                            <li>Tool integrations (n8n, APIs, knowledge systems)</li>
-                            <li>Runbook, governance, and scaling handoff</li>
-                        </ul>
-                    </article>
-                </div>
-                <div class="services-cta">
-                    <a href="mailto:rloftin303@gmail.com?subject=Engagement%20Scoping%20Request" class="btn-primary"><i class="fas fa-envelope"></i> Request Engagement Scope</a>
-                    <a href="mailto:rloftin303@gmail.com?subject=Discovery%20Call%20Request" class="btn-secondary"><i class="fas fa-calendar-alt"></i> Book Discovery Call</a>
-                </div>
-            </section>
-
-            <!-- Featured Projects Section -->
-            <section class="featured-projects">
-                <h2>Featured Projects</h2>
-                <div class="project-grid" id="project-grid"></div>
-            </section>
-
-            <!-- AI in Infrastructure Section -->
-            <section class="ai-infrastructure">
-                <h2><i class="fas fa-robot"></i> AI in Infrastructure</h2>
-                <div class="ai-intro">
-                    <p>Leveraging artificial intelligence to transform traditional IT operations into predictive, self-healing, and highly automated systems. My approach combines AI-driven insights with proven infrastructure expertise to deliver measurable efficiency gains.</p>
-                </div>
-                <div class="ai-capabilities">
-                    <div class="ai-capability">
-                        <h3><i class="fas fa-brain"></i> AI-Driven Operations</h3>
-                        <ul>
-                            <li><strong>Intelligent Workflow Automation:</strong> Built n8n + GPT integrations to automate task prioritization, reducing manual triage time by 89%</li>
-                            <li><strong>Natural Language Processing:</strong> Implemented ChatGPT API workflows to analyze and summarize complex infrastructure data from multiple sources</li>
-                            <li><strong>Smart Notifications:</strong> Created context-aware alerting systems that intelligently filter and prioritize critical events</li>
-                        </ul>
-                    </div>
-                    <div class="ai-capability">
-                        <h3><i class="fas fa-chart-line"></i> Predictive Monitoring</h3>
-                        <ul>
-                            <li><strong>Proactive Issue Detection:</strong> Analyzing patterns in system logs and metrics to identify potential failures before they impact users</li>
-                            <li><strong>Capacity Planning:</strong> Using historical data and ML models to forecast resource requirements and optimize cloud spending</li>
-                            <li><strong>Anomaly Detection:</strong> Implementing automated baselines and intelligent alerting to reduce false positives by 60%</li>
-                        </ul>
-                    </div>
-                    <div class="ai-capability">
-                        <h3><i class="fas fa-cogs"></i> Process Optimization</h3>
-                        <ul>
-                            <li><strong>Automated Documentation:</strong> Using AI to generate and maintain infrastructure documentation from live environments</li>
-                            <li><strong>Intelligent Ticket Routing:</strong> Implementing ML-based classification to route support tickets to appropriate teams automatically</li>
-                            <li><strong>Knowledge Base Enhancement:</strong> Creating AI-powered knowledge systems that learn from resolution patterns</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="ai-showcase">
-                    <h3>Spotlight: AI-Powered Morning Briefing</h3>
-                    <div class="ai-showcase-content">
-                        <div class="ai-showcase-description">
-                            <p>A production workflow that demonstrates practical AI integration in daily operations. This system aggregates information from ticketing systems, email, and project management tools, uses GPT-4 to analyze and prioritize tasks based on context and urgency, then delivers a personalized briefing.</p>
-                            <p><strong>Impact:</strong> Reduced morning preparation time from 45 minutes to 5 minutes while improving task prioritization accuracy and ensuring no critical items are missed across multiple client environments.</p>
-                        </div>
-                        <div class="ai-showcase-tech">
-                            <h4>Technology Stack</h4>
-                            <div class="tech-flow">
-                                <span class="tech-step">n8n Workflows</span>
-                                <i class="fas fa-arrow-right"></i>
-                                <span class="tech-step">ChatGPT API</span>
-                                <i class="fas fa-arrow-right"></i>
-                                <span class="tech-step">Notion Database</span>
-                                <i class="fas fa-arrow-right"></i>
-                                <span class="tech-step">Email Automation</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Blog / Insights Section -->
-            <section class="blog-insights">
-                <h2><i class="fas fa-lightbulb"></i> Insights & Technical Articles</h2>
-                <div class="blog-intro">
-                    <p>Sharing practical insights and lessons learned from real-world infrastructure challenges.</p>
-                </div>
-                <div class="blog-grid">
-                    <article class="blog-post">
-                        <div class="blog-header">
-                            <h3>Building Self-Healing Infrastructure with Azure Automation</h3>
-                            <span class="blog-date"><i class="far fa-calendar"></i> March 2025</span>
-                            <span class="blog-readtime"><i class="far fa-clock"></i> 5 min read</span>
-                        </div>
-                        <p class="blog-excerpt">How to leverage Azure Automation Runbooks and Logic Apps to create infrastructure that automatically detects and resolves common issues without human intervention. Includes real-world examples of self-healing VM restarts, disk cleanup automation, and certificate renewal workflows.</p>
-                        <div class="blog-tags">
-                            <span class="tag">Azure</span>
-                            <span class="tag">Automation</span>
-                            <span class="tag">PowerShell</span>
-                            <span class="tag">Self-Healing</span>
-                        </div>
-                    </article>
-
-                    <article class="blog-post">
-                        <div class="blog-header">
-                            <h3>Mastering Azure Update Manager: A Practical Guide</h3>
-                            <span class="blog-date"><i class="far fa-calendar"></i> February 2025</span>
-                            <span class="blog-readtime"><i class="far fa-clock"></i> 7 min read</span>
-                        </div>
-                        <p class="blog-excerpt">Deep dive into Azure Update Manager for centralized patch management across hybrid environments. Covers scheduling strategies, pre/post-patching scripts, maintenance windows, and integration with Azure Arc for on-premises servers. Learn how to achieve 99.9% patching compliance.</p>
-                        <div class="blog-tags">
-                            <span class="tag">Azure</span>
-                            <span class="tag">Patch Management</span>
-                            <span class="tag">Compliance</span>
-                            <span class="tag">Azure Arc</span>
-                        </div>
-                    </article>
-
-                    <article class="blog-post">
-                        <div class="blog-header">
-                            <h3>Automating Identity Management with Microsoft Graph API</h3>
-                            <span class="blog-date"><i class="far fa-calendar"></i> January 2025</span>
-                            <span class="blog-readtime"><i class="far fa-clock"></i> 6 min read</span>
-                        </div>
-                        <p class="blog-excerpt">Practical examples of using Microsoft Graph API to automate user lifecycle management, group membership updates, and access reviews. Includes PowerShell scripts for bulk operations, API authentication best practices, and integration patterns for CI/CD pipelines.</p>
-                        <div class="blog-tags">
-                            <span class="tag">Microsoft Graph</span>
-                            <span class="tag">Identity</span>
-                            <span class="tag">PowerShell</span>
-                            <span class="tag">Automation</span>
-                        </div>
-                    </article>
-
-                    <article class="blog-post">
-                        <div class="blog-header">
-                            <h3>Infrastructure as Code: Terraform vs Ansible in Practice</h3>
-                            <span class="blog-date"><i class="far fa-calendar"></i> December 2024</span>
-                            <span class="blog-readtime"><i class="far fa-clock"></i> 8 min read</span>
-                        </div>
-                        <p class="blog-excerpt">When to use Terraform, when to use Ansible, and how to use both together effectively. Real-world decision framework based on provisioning vs configuration management needs, with examples from enterprise deployments. Includes hybrid approach patterns and best practices.</p>
-                        <div class="blog-tags">
-                            <span class="tag">Terraform</span>
-                            <span class="tag">Ansible</span>
-                            <span class="tag">IaC</span>
-                            <span class="tag">DevOps</span>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="experience">
-                <h2>Professional Experience</h2>
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Lead Infrastructure Systems Consultant</h3>
-                        <p class="company">Long View Systems - Toronto, ON</p>
-                        <p class="date">Dec 2017 - Present</p>
-                    </div>
-                    <ul class="achievements">
-                        <li>Lead a high-performing team of 8-10 members, delivering Tier 2/3 support for multiple enterprise clients.</li>
-                        <li>Architect and manage hybrid cloud deployments integrating Azure, AWS, and VMware.</li>
-                        <li>Designed and implemented IaC solutions using Terraform and Ansible, reducing deployment time from 3 days to 2 hours.</li>
-                        <li>Automated security patching and configuration management using PowerShell and Python, improving compliance by 40%.</li>
-                        <li>Oversaw 500+ endpoint management using SCCM & Intune, optimizing device provisioning.</li>
-                        <li>Integrated AI-driven automation tools, reducing IT support ticket resolution time by 30%.</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>IT Administrator</h3>
-                        <p class="company">PaySimple - Denver, CO</p>
-                        <p class="date">Oct 2017 - Dec 2017</p>
-                    </div>
-                    <ul class="achievements">
-                        <li>Managed daily administration of on-site and AWS cloud-based IT systems, ensuring 99.9% uptime.</li>
-                        <li>Performed scheduled maintenance, upgrades, and patch deployments using WSUS.</li>
-                        <li>Administered Active Directory, Group Policy, and Office 365 for 100+ internal and 20+ remote users.</li>
-                        <li>Configured and maintained Cisco switches, ASA firewalls, and VPN access.</li>
-                        <li>Mentored and trained Tier 1 & 2 teams, improving resolution time and documentation quality.</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Infrastructure Analyst</h3>
-                        <p class="company">First Canadian Title Insurance - Mississauga, ON</p>
-                        <p class="date">October 2014 - October 2017</p>
-                    </div>
-                    <ul class="achievements">
-                        <li>Responsible for Tier 2 & 3 network and systems support. SME on virtual machine creations and deployments using SCCM/VMware into Prod, PreProd, DR environment utilizing VMware ESXi platform.</li>
-                        <li>Successfully completed a company-wide migration from Windows 7 Pro to Windows 10 pro. Managed Tier 1 & 2 Citrix 7.7 VDI environment for all offshore users (144 total).</li>
-                        <li>Designed and maintained Visio documentation of all Production and Secondary data centre equipment (Rack, Power, and Cage Layout).</li>
-                        <li>Led the 2017 Production/DR data centre decommission and destruction within PCI compliance.</li>
-                        <li>Implemented and configured the 2017 secure network printer project (Canon - Uniflow) spanning 10 offices across 8 provinces.</li>
-                        <li>Monitored and supported over 600 servers, administering Active Directory (IAM), Exchange 2010, and Group Policy management.</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Operations Specialist II</h3>
-                        <p class="company">SunGard AS - Mississauga, ON</p>
-                        <p class="date">April 2014 - October 2014</p>
-                    </div>
-                    <ul class="achievements">
-                        <li>Led an IT team of 6 to support hardware and software operations changes including hundreds of servers and various network devices.</li>
-                        <li>Managed data centre duties including deploying, implementing and monitoring clients network/server environment (Cisco UCS Chassis, Cisco Router, Switches, Firewall - Windows Srv 2k3-2k12 - CentOS).</li>
-                        <li>Responsible for reviewing technical documentation and implementing client designs.</li>
-                        <li>Managed task delegation, prioritization, problem resolution, and incident management while identifying recurring issues for process improvement.</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Operations Specialist [Datacenter Operations]</h3>
-                        <p class="company">SunGard AS - Mississauga, ON</p>
-                        <p class="date">December 2012 - April 2014</p>
-                    </div>
-                    <ul class="achievements">
-                        <li>Provided training to Data Center Specialist staff ensuring effective 24/7 support environment.</li>
-                        <li>Supported IT initiatives by providing feedback and suggested improvements for processes and services.</li>
-                        <li>Managed batch processing, backups, troubleshooting, and production job signoffs.</li>
-                        <li>Led system monitoring, application readiness, and problem resolution efforts.</li>
-                        <li>Identified recurring issues and made recommendations for process improvement.</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Sr. Data Center Operations Technician</h3>
-                        <p class="company">SunGard AS - Aurora, CO</p>
-                        <p class="date">August 2005 - December 2012</p>
-                    </div>
-                    <ul class="achievements">
-                        <li>Provided technical assistance for Windows 2000, XP, and Windows Server 2k3/2k8 systems.</li>
-                        <li>Performed complex problem diagnosis and isolation of customer server infrastructure and network components.</li>
-                        <li>Conducted hardware diagnostics and implemented solutions for identified failures.</li>
-                        <li>Managed OS installations across multiple platforms (Microsoft, Linux, ESX, Apple) and basic to advanced Cisco equipment configuration.</li>
-                        <li>Provided Active Directory support for internal SunGard employees.</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Domain Migration Technician</h3>
-                        <p class="company">University of Colorado - Denver, CO</p>
-                        <p class="date">September 2008 - April 2009</p>
-                    </div>
-                    <ul class="achievements">
-                        <li>Provided active directory expertise for domain consolidation project supporting over 20,000 users.</li>
-                        <li>Managed user and group objects, including security permissions setup and maintenance.</li>
-                        <li>Created and maintained admin, service, and test accounts and groups.</li>
-                        <li>Configured corporate BlackBerry devices and Outlook email accounts.</li>
-                        <li>Served as Lead Apple/Mac Specialist during domain consolidation.</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>SW Field Technician</h3>
-                        <p class="company">Dell HW - Englewood, CO</p>
-                        <p class="date">January 2008 - September 2008</p>
-                    </div>
-                    <ul class="achievements">
-                        <li>Installed, maintained, and repaired company and multi-vendor systems including hardware, software, and networking products.</li>
-                        <li>Optimized hardware/software/networking product configurations at customer sites.</li>
-                        <li>Diagnosed and resolved product performance issues.</li>
-                        <li>Provided preventative maintenance advice and configuration recommendations to ensure customer satisfaction.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="education">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>A.S. Computer and Information Systems</h3>
-                    <p class="institution">College of America</p>
-                    <p class="date">1999 - 2001</p>
-                    <p class="details">Graduated with a 3.2 GPA</p>
-                </div>
-            </section>
-
-            <section class="certifications">
-                <h2>Technical Certifications</h2>
-                <div class="certifications-grid">
-                    <div class="cert-category">
-                        <h3>Cloud Platform Certifications</h3>
-                        <ul class="cert-list">
-                            <li><i class="fab fa-microsoft"></i> Azure Fundamentals (AZ-900)</li>
-                            <li><i class="fab fa-microsoft"></i> Azure Administrator Associate (AZ-104)</li>
-                            <li><i class="fab fa-microsoft"></i> Identity and Access Administrator (SC-300)</li>
-                            <li><i class="fab fa-aws"></i> AWS Certified Cloud Practitioner</li>
-                            <li><i class="fab fa-google"></i> Google Cloud Digital Leader</li>
-                        </ul>
-                    </div>
-                    <div class="cert-category">
-                        <h3>Industry Certifications</h3>
-                        <ul class="cert-list">
-                            <li><i class="fas fa-certificate"></i> ITIL v4</li>
-                            <li><i class="fas fa-network-wired"></i> CCNA Routing and Switching (Cisco Systems)</li>
-                            <li><i class="fas fa-shield-alt"></i> Network+ (CompTIA)</li>
-                            <li><i class="fas fa-laptop"></i> A+ (CompTIA)</li>
-                            <li><i class="fab fa-microsoft"></i> MCP - Networking (Microsoft)</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="technical-skills">
-                <h2>Relevant Technical Skills</h2>
-                <div class="skills-grid">
-                    <ul class="skill-list">
-                        <li><i class="fas fa-check-circle"></i> Active Directory (10+ years)</li>
-                        <li><i class="fas fa-check-circle"></i> Windows Server (10+ years)</li>
-                        <li><i class="fas fa-check-circle"></i> Servers (10+ years)</li>
-                        <li><i class="fas fa-check-circle"></i> Network Administration (6 years)</li>
-                        <li><i class="fas fa-check-circle"></i> VMware (8 years)</li>
-                        <li><i class="fas fa-check-circle"></i> Microsoft Azure (5 years)</li>
-                        <li><i class="fas fa-check-circle"></i> Google Cloud Platform (GCP) (2 years)</li>
-                    </ul>
-                    <ul class="skill-list">
-                        <li><i class="fas fa-check-circle"></i> Citrix (4 years)</li>
-                        <li><i class="fas fa-check-circle"></i> Amazon Web Services (2 years)</li>
-                        <li><i class="fas fa-check-circle"></i> DNS (10+ years)</li>
-                        <li><i class="fas fa-check-circle"></i> VPN (5 years)</li>
-                        <li><i class="fas fa-check-circle"></i> SCCM (5 years)</li>
-                        <li><i class="fas fa-check-circle"></i> LAN (7 years)</li>
-                        <li><i class="fas fa-check-circle"></i> Linux (3 year)</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Testimonials Section -->
-            <section class="testimonials">
-                <h2><i class="fas fa-quote-left"></i> Client Testimonials</h2>
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <p class="testimonial-text">"Rob's expertise in cloud infrastructure and automation transformed our operations. His implementation of CI/CD pipelines reduced our deployment time by over 90%, and his proactive approach to infrastructure management has been invaluable. He consistently delivers beyond expectations and brings innovative AI-driven solutions to complex challenges."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-info">
-                                <p class="author-name">Michael Chen</p>
-                                <p class="author-title">Director of IT Operations, Enterprise Client</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <p class="testimonial-text">"Working with Rob has been exceptional. His deep knowledge of Azure and AWS, combined with his ability to lead cross-functional teams, made our cloud migration seamless. He improved our security compliance by 40% while reducing costs. Rob is not just technically brilliant—he's a strategic thinker who understands business needs."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-info">
-                                <p class="author-name">Sarah Thompson</p>
-                                <p class="author-title">VP of Technology, Long View Systems</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
-
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Rob Loftin</h3>
-                <p>CEO & Chief AI Architect</p>
-                <p class="footer-tagline">Building AI-first operations, cloud automation, and resilient platform strategy</p>
-            </div>
-            <div class="footer-section">
-                <h4>Connect</h4>
-                <div class="footer-links">
-                    <a href="mailto:rloftin303@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-                    <a href="https://linkedin.com/in/rob-loftin" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com/iloveyouit" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="tel:720.292.6098"><i class="fas fa-phone"></i> (720) 292-6098</a>
-                    <a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a>
-                    <a href="skills.html"><i class="fas fa-layer-group"></i> Skills</a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h4>Expertise</h4>
-                <div class="footer-expertise">
-                    <span>Azure</span>
-                    <span>AWS</span>
-                    <span>DevOps</span>
-                    <span>Infrastructure as Code</span>
-                    <span>AI Automation</span>
-                </div>
-            </div>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Senior infrastructure &amp; automation consultant</p>
+        <h1 id="hero-title">I turn operational risk into systems teams can trust.</h1>
+        <p class="hero-lede">More than 20 years across enterprise infrastructure, with current work focused on safer Azure operations, evidence-first PowerShell, identity and security diagnostics, and governed AI workflows.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">See 2026 work</a>
+          <a class="button button-secondary" href="mailto:rloftin303@gmail.com">Start a conversation</a>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Rob Loftin. All rights reserved.</p>
-            <p class="footer-location"><i class="fas fa-map-marker-alt"></i> Denver, CO / Toronto, ON</p>
+        <ul class="signal-list" aria-label="Professional highlights">
+          <li><strong>20+ years</strong><span>enterprise infrastructure</span></li>
+          <li><strong>30+ environments</strong><span>supported in current role</span></li>
+          <li><strong>AZ-104</strong><span>renewed through Sep 2027</span></li>
+        </ul>
+      </div>
+      <aside class="hero-card" aria-label="Current focus">
+        <img src="images/rob-loftin.webp" alt="Rob Loftin" width="768" height="768" fetchpriority="high">
+        <div>
+          <p class="status"><span aria-hidden="true"></span> Based in Toronto · working across North America</p>
+          <h2>Current focus</h2>
+          <p>Building operational tools with preview gates, approvals, structured evidence, and explicit human control.</p>
+          <div class="hero-links">
+            <a href="https://linkedin.com/in/rob-loftin" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/iloveyouit" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-    </footer>
+      </aside>
+    </section>
 
-    <script src="js/main.js"></script>
+    <section class="principles" aria-label="Working principles">
+      <p>Preview before change</p>
+      <p>Evidence before claims</p>
+      <p>Automation with guardrails</p>
+      <p>Knowledge that survives handoff</p>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected work · 2026</p>
+          <h2 id="work-title">Built for real operational constraints</h2>
+        </div>
+        <a class="text-link" href="projects.html">View the full project archive <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="project-grid" id="project-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="section field-notes" aria-labelledby="field-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">How I work</p>
+          <h2 id="field-title">Engineering patterns carried across the year</h2>
+        </div>
+      </div>
+      <div class="notes-grid">
+        <article>
+          <span class="note-index">01</span>
+          <h3>Safe change execution</h3>
+          <p>WhatIf and simulation paths, prerequisites, approvals, recovery points, cooldowns, postconditions, and clear stop states before consequential actions.</p>
+        </article>
+        <article>
+          <span class="note-index">02</span>
+          <h3>Evidence-ready delivery</h3>
+          <p>Structured logs and CSV, JSON, or HTML outputs that make patching, investigations, and change reviews easier to verify and repeat.</p>
+        </article>
+        <article>
+          <span class="note-index">03</span>
+          <h3>Human-governed AI</h3>
+          <p>AI can classify, summarize, and recommend. Publication, production change, financial action, and customer communication stay behind explicit review.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Infrastructure depth, modern delivery</h2>
+        </div>
+      </div>
+      <div class="experience-list">
+        <article class="experience-row">
+          <div><p class="date">2017—present</p><p class="company">Long View Systems · Toronto</p></div>
+          <div><h3>Lead Infrastructure Systems Consultant</h3><p>Enterprise support and consulting across Azure, Windows Server, Active Directory and Entra ID, VMware and Hyper-V, patching, monitoring, incident response, and change control. Built reusable automation and documentation used across Toronto and U.S. delivery teams.</p></div>
+        </article>
+        <article class="experience-row">
+          <div><p class="date">2014—2017</p><p class="company">First Canadian Title Insurance</p></div>
+          <div><h3>Infrastructure Analyst</h3><p>Tier 2/3 infrastructure support, VMware and SCCM delivery, Citrix operations, data-centre documentation and decommissioning, and a multi-province secure-print program.</p></div>
+        </article>
+        <article class="experience-row">
+          <div><p class="date">2005—2014</p><p class="company">SunGard Availability Services</p></div>
+          <div><h3>Operations & Data Centre Leadership</h3><p>Progressed from senior technician to operations leadership across 24/7 production support, server and network operations, incident management, training, and process improvement.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section capability-section" aria-labelledby="capability-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Capabilities</p>
+          <h2 id="capability-title">From platform internals to operational handoff</h2>
+        </div>
+        <a class="text-link" href="skills.html">Explore the skills matrix <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="skills-grid" id="skills-grid"></div>
+    </section>
+
+    <section class="contact-panel" aria-labelledby="contact-title">
+      <p class="eyebrow">Let’s make the work repeatable</p>
+      <h2 id="contact-title">Need clearer operations, safer automation, or a system your team can actually inherit?</h2>
+      <div class="contact-actions">
+        <a class="button button-light" href="mailto:rloftin303@gmail.com">rloftin303@gmail.com</a>
+        <a class="text-link light" href="https://linkedin.com/in/rob-loftin" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Rob Loftin</p>
+    <p>Infrastructure · Automation · Governed AI</p>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
